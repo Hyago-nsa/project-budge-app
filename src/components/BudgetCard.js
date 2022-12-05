@@ -1,7 +1,14 @@
 import { Button, Card, ProgressBar, Stack } from "react-bootstrap"
 import { currencyFormatter } from "../utils"
 
-export default function BudgetCard({
+function getProgressBarVariant(amount, max) {
+  const ratio = amount / max
+  if (ratio < 0.5) return "primary"
+  if (ratio < 0.75) return "warning"
+  return "danger"
+}
+
+const BudgetCard = ({
   name,
   amount,
   max,
@@ -9,7 +16,7 @@ export default function BudgetCard({
   hideButtons,
   onAddExpenseClick,
   onViewExpensesClick,
-}) {
+}) => {
   const classNames = []
   if (amount > max) {
     classNames.push("bg-danger", "bg-opacity-10")
@@ -59,9 +66,4 @@ export default function BudgetCard({
   )
 }
 
-function getProgressBarVariant(amount, max) {
-  const ratio = amount / max
-  if (ratio < 0.5) return "primary"
-  if (ratio < 0.75) return "warning"
-  return "danger"
-}
+export default BudgetCard
