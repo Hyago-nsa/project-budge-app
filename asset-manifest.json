@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-budge-app/static/css/main.f0d685eb.css",
+    "main.js": "/project-budge-app/static/js/main.a59c9a5c.js",
+    "index.html": "/project-budge-app/index.html",
+    "main.f0d685eb.css.map": "/project-budge-app/static/css/main.f0d685eb.css.map",
+    "main.a59c9a5c.js.map": "/project-budge-app/static/js/main.a59c9a5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0d685eb.css",
+    "static/js/main.a59c9a5c.js"
+  ]
+}
